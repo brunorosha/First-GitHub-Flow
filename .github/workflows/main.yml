@@ -26,7 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Verificação da versão do NodeJS atual"
-        run: node --vesion
+        run: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+          nvm install 20
+          node --vesion
       - name: "Definição da versão 22.13.1"
         uses: actions/setup-node@v4
         with:
