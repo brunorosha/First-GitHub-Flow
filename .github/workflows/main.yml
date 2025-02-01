@@ -14,8 +14,3 @@ on:
 						run: |
 							echo "Você que criou seu primeiro workflow!!!"
 							echo "Parabéns!!!"
-					- name: "Minha terceira ação - Script Python"
-						run: |
-							variavel = "Hello World !!!"
-							print(variavel)
-						shell: python
